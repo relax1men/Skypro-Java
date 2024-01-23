@@ -24,7 +24,7 @@ public class Main {
         double z = 2.786;
         int u = 569;
         short p = -159;
-        char k = 27897;
+        char w = 27897;
         byte h = 67;
 
         //number 3
