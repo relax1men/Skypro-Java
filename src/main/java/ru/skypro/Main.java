@@ -5,84 +5,69 @@ public class Main {
 
         //number 1
         System.out.println("Задание 1");
-        int clientOS = 1;
-        int android = 1;
-        int iOs = 0;
-        if (clientOS == iOs) {
-            System.out.println("Установите версию приложения для iOS по ссылке");
-        } else if (clientOS == android) {
-            System.out.println("Установите версию приложения для Android по ссылке");
-        } else {
-            System.out.println("Не корректная OS");
+        for (int i = 1; i <= 10; i++) {
+            System.out.println(i);
         }
 
 
         //number 2
         System.out.println("Задание 2");
-        int clientDeviceYear = 2013;
-        int fixedYear = 2015;
-        if (clientOS == android && clientDeviceYear < fixedYear) {
-            System.out.println("Установите облегченную версию приложения для Android по ссылке");
-        } else if (clientOS == android && clientDeviceYear >= fixedYear) {
-            System.out.println("Установите  версию приложения для Android по ссылке");
-        } else if (clientOS == iOs && clientDeviceYear < fixedYear) {
-            System.out.println("Установите облегченную версию приложения для iOS по ссылке");
-        } else if (clientOS == iOs && clientDeviceYear >= fixedYear) {
-            System.out.println("Установите версию приложения для iOS по ссылке");
-        } else {
-            System.out.println("Не корректная OS");
+        for (int i = 10; i >= 1; i--) {
+            System.out.println(i);
         }
-
 
         //number 3
         System.out.println("Задание 3");
-        int year = 2021;
-        if (year > 1584 && year % 4 == 0 && year % 100 != 0 || year % 400 == 0) {
-            System.out.println(year + " год является високосным");
-        } else {
-            System.out.println(year + " год не является високосным");
+        for (int i = 0; i <= 17; i = i + 2) {
+            System.out.println(i);
         }
 
         //number 4
         System.out.println("Задание 4");
-        int deliveryDistance = 40;
-        int days = 1;
-        if (deliveryDistance > 20) {
-            days++;
+        for (int i = 10; i >= -10; i--) {
+            System.out.println(i);
         }
-        if (deliveryDistance > 60) {
-            days++;
-        }
-        if (deliveryDistance > 100) {
-            days = -1;
-        }
-        if (days == -1) {
-            System.out.println("Доставки нет");
-        } else {
-            System.out.println("Потребуется дней " + days);
-        }
-
         //number 5
         System.out.println("Задание 5");
-        int monthNumber = 8;
-        switch (monthNumber){
-            case 1,2,12 :
-                System.out.println("Зима");
-                break;
-            case 3,4,5 :
-                System.out.println("Весна");
-                break;
-            case 6,7,8 :
-                System.out.println("Лето");
-                break;
-            case 9,10,11 :
-                System.out.println("Осень");
-                break;
-            default:
-                System.out.println("Такого месяца не существует");
+        for (int i = 1904; i <= 2096; i = i + 4) {
+            System.out.println(i);
         }
 
+        //number 6
+        System.out.println("Задание 6");
+        for (int i = 7; i <= 98; i = i + 7) {
+            System.out.println(i);
+        }
 
+        //number 7
+        System.out.println("Задание 7");
+        for (int i = 1; i <= 512; i = i * 2) {
+            System.out.println(i);
+        }
+        //number 8
+        System.out.println("Задание 8");
+        int salary = 29000;
+        int total = 0;
+        for (int i = 1; i <= 12; i++) {
+            total = total + salary;
+            System.out.println("Месяц " + i + " ,сумма накоплений равна " + total + " рублей.");
+        }
 
+        //number 9
+        System.out.println("Задание 9");      // в этой задаче цикл вроде работает, но по числам как будто не бьет
+        int salaryForDeposit = 29000;
+        int capital = 0;
+        for (int i = 1; i <= 12; i++) {
+            capital = capital + capital / 100;
+            capital = capital + salaryForDeposit;
+            System.out.println("Месяц " + i + " ,сумма накоплений равна " + capital + " рублей.");
+        }
+
+        //number 10
+        System.out.println("Задание 10");
+        int a = 2;
+        for (int i = 1; i <= 10; i++) {
+            System.out.println(a + " * " + i + " = " + (a * i));
+        }
     }
 }
