@@ -82,16 +82,13 @@ public class Main {
         //number 4
         System.out.println("Задание 4");
         for (int i = 0; i < arr.length; i++) {
-            if (arr[i]%2==0) {
-                System.out.print(arr[i]+ " ");
+            if (arr[i] % 2 == 0) {
+                System.out.print(arr[i] + " ");
                 arr[i]++;
             } else {
                 System.out.print(arr[i] + 1 + " ");
             }
         }
-
-
-
 
 
     }
