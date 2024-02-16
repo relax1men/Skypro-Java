@@ -22,29 +22,24 @@ public class Main {
         System.out.print("Задание 2");
         System.out.println();
         for (int i = 0; i < arr.length; i++) {
-            if (i == arr.length - 1) {
-                System.out.print(arr[i]);
-                break;
-            } else {
-                System.out.print(arr[i] + ", ");
+            System.out.print(arr[i]);
+            if (i < arr.length - 1) {
+                System.out.print(", ");
             }
+
         }
         System.out.println();
         for (int i = 0; i < arr2.length; i++) {
-            if (i == arr2.length - 1) {
-                System.out.print(arr2[i]);
-                break;
-            } else {
-                System.out.print(arr2[i] + ", ");
+            System.out.print(arr2[i]);
+            if (i < arr2.length - 1) {
+                System.out.print(", ");
             }
         }
-        System.out.println();
+        System.out.println();     //аналогично как во 2 задании(уже переделал) с условными операторами накосячил
         for (int i = 0; i < arr3.length; i++) {
-            if (i == arr3.length - 1) {
-                System.out.print(arr3[i]);
-                break;
-            } else {
-                System.out.print(arr3[i] + ", ");
+            System.out.print(arr3[i]);
+            if (i < arr3.length - 1) {
+                System.out.print(", ");
             }
         }
         System.out.println();
@@ -84,7 +79,6 @@ public class Main {
         for (int i = 0; i < arr.length; i++) {
             if (arr[i] % 2 == 0) {
                 System.out.print(arr[i] + " ");
-                arr[i]++;
             } else {
                 System.out.print(arr[i] + 1 + " ");
             }
