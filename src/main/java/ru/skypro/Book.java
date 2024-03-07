@@ -3,9 +3,9 @@ package ru.skypro;
 import java.util.Objects;
 
 public class Book {
-    public String title;
-    public int year;
-    public Author author;
+    private String title;
+    private int year;
+    private Author author;
 
     public Book(String title, int year, Author author) {
         this.title = title;
