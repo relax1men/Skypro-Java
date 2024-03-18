@@ -111,7 +111,7 @@ public class Main {
                 employeeWithMaxSalary = employees[i];
             }
         }
-        return employeeWithMaxSalary;
+         return employeeWithMaxSalary;
 
     }
 }
