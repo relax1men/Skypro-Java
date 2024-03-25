@@ -7,13 +7,13 @@ public class Employee {
     private final String name;
     private final String surname;
     private final String middleName;
-    private int salary;
+    private double salary;
     private int department;
     private final int id;
     private static int idGenerate = 1;
 
 
-    public Employee(String name, String surname, String middleName, int salary, int department) {
+    public Employee(String name, String surname, String middleName, double salary, int department) {
         this.id = idGenerate++;
         this.name = name;
         this.surname = surname;
@@ -27,30 +27,36 @@ public class Employee {
     }
 
     public String getSurname() {
+
         return surname;
     }
 
     public String getMiddleName() {
+
         return middleName;
     }
 
-    public int getSalary() {
+    public double getSalary() {
+
         return salary;
     }
 
     public int getDepartment() {
+
         return department;
     }
 
     public int getId() {
+
         return id;
     }
 
-    public void setSalary(int salary) {
+    public void setSalary(double salary) {
         this.salary = salary;
     }
 
     public void setDepartment(int department) {
+
         this.department = department;
     }
 
