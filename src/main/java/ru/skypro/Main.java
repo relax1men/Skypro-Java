@@ -5,22 +5,22 @@ import java.util.concurrent.ThreadLocalRandom;
 
 public class Main {
     public static void main(String[] args) {
-        GriffindorStudent garry = generateGriffindorStudent("Гарри Поттер");
-        GriffindorStudent ron = generateGriffindorStudent("Рон Уизли");
-        GriffindorStudent germeona = generateGriffindorStudent("Гермиона Грейнджер");
-        PuffenduyStudent zaharia = generatePuffenduyStudent("Захария Смит");
-        PuffenduyStudent sedrik = generatePuffenduyStudent("Седрик Диггори");
-        PuffenduyStudent justin = generatePuffenduyStudent("Джастин Флетч");
-        SlizerineStudent malfoi = generateSlizerineStudent("Драко Малфой");
-        SlizerineStudent grahem = generateSlizerineStudent("Грахем Монтегю");
-        SlizerineStudent gregory = generateSlizerineStudent("Грегори Гойл");
-        KogtevranStudent chjou = generateKogtevranStudent("Чжоу Чанг");
-        KogtevranStudent padma = generateKogtevranStudent("Падма Патил");
-        KogtevranStudent markus = generateKogtevranStudent("Маркус Белби");
+        HogwartsStudent garry = generateGriffindorStudent("Гарри Поттер");
+        HogwartsStudent ron = generateGriffindorStudent("Рон Уизли");
+        HogwartsStudent germeona = generateGriffindorStudent("Гермиона Грейнджер");
+        HogwartsStudent zaharia = generatePuffenduyStudent("Захария Смит");
+        HogwartsStudent sedrik = generatePuffenduyStudent("Седрик Диггори");
+        HogwartsStudent justin = generatePuffenduyStudent("Джастин Флетч");
+        HogwartsStudent malfoi = generateSlizerineStudent("Драко Малфой");
+        HogwartsStudent grahem = generateSlizerineStudent("Грахем Монтегю");
+        HogwartsStudent gregory = generateSlizerineStudent("Грегори Гойл");
+        HogwartsStudent chjou = generateKogtevranStudent("Чжоу Чанг");
+        HogwartsStudent padma = generateKogtevranStudent("Падма Патил");
+        HogwartsStudent markus = generateKogtevranStudent("Маркус Белби");
         chjou.compareToStudent(justin);
         chjou.print();
         justin.print();
-        sedrik.compareTo(zaharia);
+        sedrik.compareToStudent(zaharia);
         sedrik.print();
         zaharia.print();
         markus.compareToStudent(garry);
