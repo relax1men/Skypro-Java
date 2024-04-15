@@ -20,10 +20,12 @@ public class Car extends WheelableTransport {
 
 
     public void updateTyre() {
+
         System.out.println("Меняем покрышку машины");
     }
 
     public void checkEngine() {
+
         System.out.println("Проверяем двигатель");
     }
 }

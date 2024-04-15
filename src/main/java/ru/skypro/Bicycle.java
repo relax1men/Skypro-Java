@@ -17,6 +17,7 @@ public class Bicycle extends WheelableTransport {
 
 
     public void updateTyre() {
+
         System.out.println("Меняем покрышку велосипеда");
     }
 }
