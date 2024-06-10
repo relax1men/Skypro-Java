@@ -1,6 +1,10 @@
 package pro.sky;
 
 import org.springframework.stereotype.Service;
+import pro.sky.Exception.EmployeeAlreadyAddedException;
+import pro.sky.Exception.EmployeeNotFoundException;
+import pro.sky.Exception.EmployeeStorageIsFullException;
+import pro.sky.model.Employee;
 
 import java.util.*;
 
@@ -8,8 +12,16 @@ import java.util.*;
 public class EmployeeService {
     private final int maxEmployees = 10;
     private final Map<String, Employee> employees = new HashMap<>();
+    private final ValidationService validationService;
 
-    public Employee add(String firstName, String lastName) {
+    public EmployeeService(ValidationService validationService) {
+        this.validationService = validationService;
+    }
+
+
+    public Employee add(String firstName, String lastName, int department, int salary) {
+        firstName = validationService.validateCheckName(firstName);
+        lastName = validationService.validateCheckName(lastName);
         String key = buildKey(firstName, lastName);
         if (employees.containsKey(key)) {
             throw new EmployeeAlreadyAddedException();
@@ -17,7 +29,7 @@ public class EmployeeService {
         if (employees.size() >= maxEmployees) {
             throw new EmployeeStorageIsFullException();
         }
-        Employee employee = new Employee(firstName, lastName);
+        Employee employee = new Employee(firstName, lastName, department, salary);
         employees.put(key, employee);
         return employee;
     }
